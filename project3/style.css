@@ -8,6 +8,7 @@
 html,body{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #main{
@@ -37,7 +38,7 @@ html,body{
     height: 100vh;
 }
    
-#workingarea{
+#workingaarea{
     position: relative;
     margin: 0 auto;
     width: 80%;
@@ -501,5 +502,293 @@ html,body{
     
     .footer-logo h3 {
         font-size: 1.5rem;
+    }
+}
+
+/* ===============================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+   =============================== */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1200px) {
+    #workingaarea {
+        width: 90%;
+    }
+    
+    #heroleft .elem h1 {
+        font-size: 6vw;
+    }
+    
+    #heroleft button {
+        font-size: 2.5vw;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    #workingaarea {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    #nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 0;
+    }
+    
+    #nav img {
+        height: 45px;
+    }
+    
+    #nleft, #nright {
+        gap: 20px;
+    }
+    
+    #nav a {
+        font-size: 11px;
+    }
+    
+    #hero {
+        flex-direction: column;
+        top: 55%;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    #heroleft {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    #heroleft .elem h1 {
+        font-size: 8vw;
+        line-height: 1;
+    }
+    
+    #heroleft button {
+        font-size: 4vw;
+        padding: 10px 30px;
+        margin-top: 3vw;
+    }
+    
+    #heroright {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #heroright #imagediv {
+        width: 80%;
+        height: 200px;
+        margin: 20px auto;
+    }
+    
+    #heroright p {
+        font-size: 12px;
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    #main {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #back {
+        height: 100vh;
+        position: relative;
+    }
+    
+    #top {
+        height: auto;
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    #workingaarea {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 0 15px;
+    }
+    
+    #nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    #nav img {
+        height: 40px;
+    }
+    
+    #nleft, #nright {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #nav a {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    #hero {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    #heroleft {
+        min-width: 100%;
+    }
+    
+    #heroleft .elem {
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    
+    #heroleft .elem h1 {
+        font-size: 12vw;
+        line-height: 0.8;
+    }
+    
+    #heroleft button {
+        font-size: 5vw;
+        padding: 12px 25px;
+        margin-top: 5vw;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    #heroleft button:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: translateY(-2px);
+    }
+    
+    #heroright {
+        width: 100%;
+        align-items: center;
+    }
+    
+    #heroright #imagediv {
+        width: 90%;
+        height: 180px;
+        margin: 15px auto;
+        border-radius: 10px;
+    }
+    
+    #heroright p {
+        font-size: 11px;
+        text-align: center;
+        max-width: 95%;
+        margin: 0 auto 15px;
+        line-height: 1.4;
+    }
+}
+
+/* Extra Small Mobile Phones */
+@media (max-width: 360px) {
+    #workingaarea {
+        padding: 0 10px;
+    }
+    
+    #nav img {
+        height: 35px;
+    }
+    
+    #nav a {
+        font-size: 9px;
+    }
+    
+    #heroleft .elem h1 {
+        font-size: 14vw;
+    }
+    
+    #heroleft button {
+        font-size: 6vw;
+        padding: 10px 20px;
+    }
+    
+    #heroright #imagediv {
+        width: 95%;
+        height: 160px;
+    }
+    
+    #heroright p {
+        font-size: 10px;
+    }
+}
+
+/* Landscape Mobile Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    #main {
+        height: auto;
+    }
+    
+    #back {
+        height: 100vh;
+    }
+    
+    #top {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #hero {
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    #heroleft {
+        min-width: 60%;
+    }
+    
+    #heroleft .elem h1 {
+        font-size: 6vw;
+    }
+    
+    #heroleft button {
+        font-size: 3vw;
+    }
+    
+    #heroright {
+        width: 35%;
+    }
+    
+    #heroright #imagediv {
+        width: 100%;
+        height: 120px;
+    }
+}
+
+/* Fix for navigation links typo */
+@media (max-width: 768px) {
+    #nleft a, #nright a {
+        display: inline-block;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+    }
+    
+    #nleft a:hover, #nright a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
     }
 }
