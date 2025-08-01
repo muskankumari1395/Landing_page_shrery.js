@@ -1,0 +1,78 @@
+/*********************TAG SELECTORS********************/
+body {
+  margin:0;
+}
+
+/*postioning
+to change the positing:static,relative,absolute,fixed*/
+
+.top-container {
+    background-color:#cef6f6;
+    text-align: center;
+    font-family:"Merriweather",serif;
+  }
+.middle-container {
+  text-align: center;
+}
+
+.bottom-container {
+  text-align: center;
+}
+.skill{
+  text-align:cen
+}
+.skill-table{
+  text-align:center;
+}
+
+  
+  h1{
+    color: #2eafa6;
+    font-size: 100px;
+    line-height:2;
+    font-family:"Sacramento", cursive;
+    font-weight: normal;
+  }
+  h3{
+    color: #2eafaf;
+    font-family:"Montserrat",sans-serif;
+  }
+  h4{
+    font-family:"Montserrat",sans-serif;
+  }
+
+  hr {
+    border-style: none;
+    border-top-style:dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
+
+  /*inline(allows to sit next to each other) elements: span (continue in same line until you run out space), images, anchors
+  inline block,none(removes the paragraph as if it never exists)*/
+
+  .hobbies{
+    text-decoration:under-line
+  }
+
+  .love{
+    text-decoration:under-line
+  }
+  /*
+  /*********************CLASS SELECTORS********************/
+  /*
+  (used to style group of elements have more than one class )
+
+
+  /*********************ID SELECTORS********************/ 
+  /*
+  (used style for unique, they are more specific than tag selector and can use it once cannot have more than one id)
+  <h1> id ="heading">Hi, I'm Muskan Kumari</h1> in html
+  (in css)
+  #heading 
+    {
+        color:#2eafa6;
+    }
+  
+
